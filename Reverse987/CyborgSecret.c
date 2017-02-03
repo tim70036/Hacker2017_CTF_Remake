@@ -7,12 +7,12 @@
 
 void decrypt(const char* a,const char* b, int len)
 {
-    char xor[LENGTH];
+    char flag[LENGTH];
     int i;
 
     for(i=0; i<LENGTH; ++i)
-        xor[i] = (char)(a[i] ^ b[i]);
-    printf("%s\n",xor);
+        flag[i] = (char)(a[i] ^ b[i]);
+    printf("%s\n",flag);
 }
 
 
