@@ -10,8 +10,8 @@ int main(int argc, char* argv[], char* envp[]){
         int fd = atoi( argv[1] ) - 0x1234;
         int len = 0;
         len = read(fd, buf, 32);
-        if(!strcmp("LETMEWIN\n", buf)){
-                printf("good job :)\n");
+        if(!strcmp("I_AM_STUPID_EGG\n", buf)){
+                printf("Of courese you are! Good job :)\n");
                 system("/bin/cat flag");
                 exit(0);
         }
